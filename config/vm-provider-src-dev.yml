@@ -33,9 +33,9 @@ vm:
       default: default.png
       maxSize: 2097152
       allowSuffix: jpg,png
-      path: /usr/local/src/vm/src/img/
+      path: D:\vm\src\img\
     video:
       url: /src/video
       default: default.mp4
-      path: /usr/local/src/vm/src/video/
+      path: D:\vm\src\video\
 
