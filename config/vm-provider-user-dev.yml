@@ -30,7 +30,7 @@ vm:
     session:
       lifetime: 60000 #秒
     img:
-      versions: 50,80,300
+      versions: 50,80,120,200,300
 
 
 
