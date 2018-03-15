@@ -23,8 +23,6 @@ spring:
 logging:
   level:
     com.vm.movie.dao.mapper: debug
-logging:
-  level:
     com.vm.movie.feign.service: debug
 
 hystrix:

@@ -23,8 +23,6 @@ spring:
 logging:
   level:
     com.vm.user.dao.mapper: debug
-logging:
-  level:
     com.vm.user.feign.service: debug
 
 hystrix:
