@@ -19,8 +19,20 @@ spring:
     # max wait time
     maxWait: 6000000
     timeBetweenEvictionRunsMillis: 30000
-
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000000
+feign:
+  hystrix:
+    enabled: false
 logging:
   level:
     com.vm.admin.dao.mapper: debug
 
+logging:
+  level:
+    com.vm.admin.feign.service: debug

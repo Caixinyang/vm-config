@@ -23,8 +23,20 @@ spring:
 logging:
   level:
     com.vm.user.dao.mapper: debug
+logging:
+  level:
+    com.vm.user.feign.service: debug
 
-
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000000
+feign:
+  hystrix:
+    enabled: false
 vm:
   user:
     session:
