@@ -43,4 +43,5 @@ vm:
     poster:
       versions: 50,80,200,600,1000
   filmmaker:
-    img: 50,80,300
+    img:
+      versions: 50,80,300

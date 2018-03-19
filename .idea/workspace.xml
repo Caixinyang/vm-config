@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2542e58-0106-49a7-9177-7ca509a8341a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/vm-provider-movie-dev.yml" afterPath="$PROJECT_DIR$/config/vm-provider-movie-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/vm-provider-movie-prod.yml" afterPath="$PROJECT_DIR$/config/vm-provider-movie-prod.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/vm-provider-user-dev.yml" afterPath="$PROJECT_DIR$/config/vm-provider-user-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/vm-provider-user-prod.yml" afterPath="$PROJECT_DIR$/config/vm-provider-user-prod.yml" />
-    </list>
+    <list default="true" id="b2542e58-0106-49a7-9177-7ca509a8341a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,15 +268,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521093672629</updated>
-      <workItem from="1521093674507" duration="112000" />
+      <workItem from="1521093674507" duration="494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112000" />
+    <option name="totallyTimeSpent" value="494000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
