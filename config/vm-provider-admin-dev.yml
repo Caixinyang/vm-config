@@ -32,10 +32,6 @@ hystrix:
 feign:
   hystrix:
     enabled: false
-logging:
-  level:
-    com.vm.admin.dao.mapper: debug
 
-logging:
-  level:
-    com.vm.admin.feign.service: debug
+
+

@@ -24,10 +24,7 @@ spring:
     maxWait: 6000000
     timeBetweenEvictionRunsMillis: 30000
 
-logging:
-  level:
-    com.vm.movie.dao.mapper: debug
-    com.vm.movie.feign.service: debug
+
 
 hystrix:
   command:

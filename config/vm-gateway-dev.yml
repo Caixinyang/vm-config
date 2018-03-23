@@ -2,9 +2,7 @@
 logging:
   config: classpath:logback.xml
   path: d://
-logging: 
-  level:
-    com.netflix: INFO
+
 zuul:
   info:
     request: true

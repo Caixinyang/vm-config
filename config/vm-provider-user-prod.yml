@@ -23,10 +23,7 @@ spring:
     maxWait: 6000000
     timeBetweenEvictionRunsMillis: 30000
 
-logging:
-  level:
-    com.vm.user.dao.mapper: debug
-    com.vm.user.feign.service: debug
+
 
 hystrix:
   command:
