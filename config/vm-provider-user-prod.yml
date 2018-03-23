@@ -1,3 +1,7 @@
+logging:
+  config: classpath:logback.xml
+logging:
+  path: /usr/local/src/logs/
 # spring
 spring:
   #db connection

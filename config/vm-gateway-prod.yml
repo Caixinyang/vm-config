@@ -1,5 +1,8 @@
 #==================== gateway ====================
-
+logging:
+  config: classpath:logback.xml
+logging:
+  path: /usr/local/src/logs/
 logging: 
   level:
     com.netflix: INFO

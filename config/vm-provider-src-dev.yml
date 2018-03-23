@@ -1,3 +1,7 @@
+logging:
+  config: classpath:logback.xml
+logging:
+  path: d://
 # spring
 spring:
   #db connection
