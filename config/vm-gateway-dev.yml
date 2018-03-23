@@ -1,7 +1,6 @@
 #==================== gateway ====================
 logging:
   config: classpath:logback.xml
-logging:
   path: d://
 logging: 
   level:
