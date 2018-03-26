@@ -33,4 +33,7 @@ feign:
   hystrix:
     enabled: true
 
-
+vm:
+  admin:
+    session:
+      lifetime: 60000 #秒
