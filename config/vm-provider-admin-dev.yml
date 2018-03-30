@@ -36,5 +36,5 @@ feign:
 vm:
   admin:
     session:
-      lifetime: 60000 #秒
+      lifetime: 5 #秒
 
