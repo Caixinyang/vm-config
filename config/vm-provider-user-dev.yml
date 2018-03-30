@@ -38,7 +38,7 @@ feign:
 vm:
   user:
     session:
-      lifetime: 60000 #秒
+      lifetime: 60 #秒
     img:
       versions: 50,80,300
 
