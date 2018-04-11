@@ -48,7 +48,7 @@ zuul:
       quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
       refresh-interval: 60 # 刷新时间窗口的时间，默认值 (秒)
       type: origin
-    policies:
+    policy-list:
       vm-provider-user:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
