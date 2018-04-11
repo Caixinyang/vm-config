@@ -58,4 +58,9 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 6000000
+vm:
+  gateway:
+    limitIpRequest:
+      lifetime: 60 #秒
+      count: 100
 
