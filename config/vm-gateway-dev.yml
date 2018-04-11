@@ -11,29 +11,30 @@ zuul:
     socket-timeout-millis: 6000000
   ratelimit:
     enabled: true
+    key-prefix: GATEWAY_RATE_LIMIT
     behind-proxy: true
     repository: REDIS #使用redis存储，一定要大写！
-    policy-list:
+    policys:
       vm-provider-user:
         limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - ORIGIN #这里一定要大写！
+          - origin
       vm-provider-src:
         limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - ORIGIN #这里一定要大写！
+          - origin
       vm-provider-admin:
         limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - ORIGIN #这里一定要大写！
+          - origin
       vm-provider-movie:
         limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - ORIGIN #这里一定要大写！
+          - origin
   routes:
       user:
         path: /user/**
