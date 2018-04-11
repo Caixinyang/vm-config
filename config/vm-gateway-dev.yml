@@ -9,6 +9,31 @@ zuul:
   host:
     connect-timeout-millis: 6000000
     socket-timeout-millis: 6000000
+  ratelimit:
+    enabled: true
+    behind-proxy: true
+    repository: REDIS #使用redis存储，一定要大写！
+    policy-list:
+      vm-provider-user:
+        limit: 1 #每秒多少个请求
+        refresh-interval: 60 #s
+        type:
+          - ORIGIN #这里一定要大写！
+      vm-provider-src:
+        limit: 1 #每秒多少个请求
+        refresh-interval: 60 #s
+        type:
+          - ORIGIN #这里一定要大写！
+      vm-provider-admin:
+        limit: 1 #每秒多少个请求
+        refresh-interval: 60 #s
+        type:
+          - ORIGIN #这里一定要大写！
+      vm-provider-movie:
+        limit: 1 #每秒多少个请求
+        refresh-interval: 60 #s
+        type:
+          - ORIGIN #这里一定要大写！
   routes:
       user:
         path: /user/**
@@ -59,8 +84,4 @@ hystrix:
           thread:
             timeoutInMilliseconds: 6000000
 
-vm:
-  gateway:
-    limitIpRequest:
-      lifetime: 60 #秒
-      count: 5
+  
