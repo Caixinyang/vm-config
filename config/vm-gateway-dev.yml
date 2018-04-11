@@ -45,25 +45,25 @@ zuul:
     repository: REDIS #使用redis存储，一定要大写！
     policys:
       user:
-        limit: 10 #每秒多少个请求
+        limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - origin
+          - ORIGIN
       src:
-        limit: 10 #每秒多少个请求
+        limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - origin
+          - ORIGIN
       admin:
-        limit: 10 #每秒多少个请求
+        limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - origin
+          - ORIGIN
       movie:
-        limit: 10 #每秒多少个请求
+        limit: 1 #每秒多少个请求
         refresh-interval: 60 #s
         type:
-          - origin
+          - ORIGIN
 feign:
   hystrix:
     enabled: false
