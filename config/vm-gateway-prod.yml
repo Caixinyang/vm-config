@@ -43,11 +43,11 @@ zuul:
     key-prefix: GATEWAY_RATE_LIMIT
     behind-proxy: true
     repository: REDIS #使用redis存储，一定要大写！
-    default-policy: #可选 - 针对所有的路由配置的策略，除非特别配置了policies
-      limit: 10 #可选 - 每个刷新时间窗口对应的请求数量限制
-      quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
-      refresh-interval: 60 # 刷新时间窗口的时间，默认值 (秒)
-      type: origin
+    default-policy-list: #optional - will apply unless specific policy exists
+      limit: 10 #optional - request number limit per refresh interval window
+      quota: 10000 #optional - request time limit per refresh interval window (in seconds)
+      refresh-interval: 60 #default value (in seconds)
+      type: origin
     policy-list:
       vm-provider-user:
         limit: 10 #每秒多少个请求
@@ -69,7 +69,6 @@ zuul:
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
         type: origin
-
 feign:
   hystrix:
     enabled: true
