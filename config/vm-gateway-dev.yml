@@ -41,31 +41,31 @@ zuul:
     enabled: true
     key-prefix: GATEWAY_RATE_LIMIT
     behind-proxy: true
-    repository: REDIS #使用redis存储，一定要大写！
-    default-policy-list: #optional - will apply unless specific policy exists
-      limit: 10 #optional - request number limit per refresh interval window
-      quota: 10000 #optional - request time limit per refresh interval window (in seconds)
-      refresh-interval: 60 #default value (in seconds)
+    repository: REDIS 
+    default-policy-list: 
+      limit: 10 
+      quota: 10000 
+      refresh-interval: 60
       type: ORIGIN
     policy-list:
-      user:
-        limit: 10 #每秒多少个请求
-        quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+      vm-provider-user:
+        limit: 10 
+        quota: 10000 
         refresh-interval: 60 #s
         type: ORIGIN
-      src:
-        limit: 10 #每秒多少个请求
-        quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+      vm-provider-src:
+        limit: 10 
+        quota: 10000 
         refresh-interval: 60 #s
         type: ORIGIN
-      admin:
-        limit: 10 #每秒多少个请求
-        quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
-        refresh-interval: 60 #s
+      vm-provider-admin:
+        limit: 10 
+        quota: 10000 
+        refresh-interval: 60
         type: ORIGIN
-      movie:
-        limit: 10 #每秒多少个请求
-        quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
+      vm-provider-movie:
+        limit: 10 
+        quota: 10000 
         refresh-interval: 60 #s
         type: ORIGIN
 feign:
