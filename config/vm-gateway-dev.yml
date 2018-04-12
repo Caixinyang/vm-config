@@ -2,17 +2,6 @@
 logging:
   config: classpath:logback.xml
   path: d://logs//
-spring:
-  redis:
-    timeout: 10
-    database: 0
-    host: 120.78.191.94
-    port: 6379
-    pool:
-      max-active: 8
-      max-idle: 8
-      max-wait: -1
-      min-idle: 0
 zuul:
   info:
     request: true
@@ -59,22 +48,22 @@ zuul:
       refresh-interval: 60 #default value (in seconds)
       type: ORIGIN
     policy-list:
-      vm-provider-user:
+      user:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
         type: ORIGIN
-      vm-provider-src:
+      src:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
         type: ORIGIN
-      vm-provider-admin:
+      admin:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
         type: ORIGIN
-      vm-provider-movie:
+      movie:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
