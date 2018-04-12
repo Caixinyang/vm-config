@@ -47,28 +47,28 @@ zuul:
       limit: 10 #optional - request number limit per refresh interval window
       quota: 10000 #optional - request time limit per refresh interval window (in seconds)
       refresh-interval: 60 #default value (in seconds)
-      type: origin
+      type: ORIGIN
     policy-list:
       vm-provider-user:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
-        type: origin
+        type: ORIGIN
       vm-provider-src:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
-        type: origin
+        type: ORIGIN
       vm-provider-admin:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
-        type: origin
+        type: ORIGIN
       vm-provider-movie:
         limit: 10 #每秒多少个请求
         quota: 10000 #可选-  每个刷新时间窗口对应的请求时间限制（秒）
         refresh-interval: 60 #s
-        type: origin
+        type: ORIGIN
 feign:
   hystrix:
     enabled: false
