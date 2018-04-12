@@ -46,19 +46,19 @@ zuul:
       vm-provider-user:
         limit: 10
         refresh-interval: 60
-        type: ORIGIN
+        type: origin
       vm-provider-src:
         limit: 10
         refresh-interval: 60
-        type: ORIGIN
+        type: origin
       vm-provider-admin:
         limit: 10
         refresh-interval: 60
-        type: ORIGIN
+        type: origin
       vm-provider-movie:
         limit: 10
         refresh-interval: 60
-        type: ORIGIN
+        type: origin
 feign:
   hystrix:
     enabled: false
