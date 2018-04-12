@@ -44,24 +44,24 @@ zuul:
     repository: REDIS
     behind-proxy: true
     default-policy:
-      limit: 10
+      limit: 100
       refresh-interval: 60
       type: origin
     policies:
       vm-provider-user:
-        limit: 10
+        limit: 100
         refresh-interval: 60
         type: origin
       vm-provider-src:
-        limit: 10
+        limit: 100
         refresh-interval: 60
         type: origin
       vm-provider-admin:
-        limit: 10
+        limit: 100
         refresh-interval: 60
         type: origin
       vm-provider-movie:
-        limit: 10
+        limit: 100
         refresh-interval: 60
         type: origin
 feign:
