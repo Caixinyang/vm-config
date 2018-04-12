@@ -45,22 +45,18 @@ zuul:
     policy-list:
       vm-provider-user:
         limit: 10
-        quota: 10000
         refresh-interval: 60
         type: ORIGIN
       vm-provider-src:
         limit: 10
-        quota: 10000
         refresh-interval: 60
         type: ORIGIN
       vm-provider-admin:
         limit: 10
-        quota: 10000
         refresh-interval: 60
         type: ORIGIN
       vm-provider-movie:
         limit: 10
-        quota: 10000
         refresh-interval: 60
         type: ORIGIN
 feign:
