@@ -2,63 +2,7 @@
 logging:
   config: classpath:logback.xml
   path: d://logs//
-zuul:
-  info:
-    request: true
-  host:
-    connect-timeout-millis: 6000000
-    socket-timeout-millis: 6000000
-  routes:
-    user:
-      path: /user/**
-      serviceId: vm-provider-user
-      stripPrefix: false
-    src:
-      path: /src/**
-      serviceId: vm-provider-src
-      stripPrefix: false
-    filmmaker:
-      path: /filmmaker/**
-      serviceId: vm-provider-movie
-      stripPrefix: false
-    movie:
-      path: /movie/**
-      serviceId: vm-provider-movie
-      stripPrefix: false
-    tagGroup:
-      path: /tagGroup/**
-      serviceId: vm-provider-movie
-      stripPrefix: false
-    tag:
-      path: /tag/**
-      serviceId: vm-provider-movie
-      stripPrefix: false
-    admin:
-      path: /admin/**
-      serviceId: vm-provider-admin
-      stripPrefix: false
-  ratelimit:
-    enabled: true
-    key-prefix: GATEWAY_RATE_LIMIT
-    behind-proxy: true
-    repository: REDIS
-    policy-list:
-      vm-provider-user:
-        limit: 10
-        refresh-interval: 60
-        type: origin
-      vm-provider-src:
-        limit: 10
-        refresh-interval: 60
-        type: origin
-      vm-provider-admin:
-        limit: 10
-        refresh-interval: 60
-        type: origin
-      vm-provider-movie:
-        limit: 10
-        refresh-interval: 60
-        type: origin
+
 feign:
   hystrix:
     enabled: false
