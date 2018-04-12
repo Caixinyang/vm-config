@@ -41,32 +41,27 @@ zuul:
     enabled: true
     key-prefix: GATEWAY_RATE_LIMIT
     behind-proxy: true
-    repository: REDIS 
-    default-policy-list: 
-      limit: 10 
-      quota: 10000 
-      refresh-interval: 60
-      type: ORIGIN
+    repository: REDIS
     policy-list:
       vm-provider-user:
-        limit: 10 
-        quota: 10000 
-        refresh-interval: 60 #s
+        limit: 10
+        quota: 10000
+        refresh-interval: 60
         type: ORIGIN
       vm-provider-src:
-        limit: 10 
-        quota: 10000 
-        refresh-interval: 60 #s
+        limit: 10
+        quota: 10000
+        refresh-interval: 60
         type: ORIGIN
       vm-provider-admin:
-        limit: 10 
-        quota: 10000 
+        limit: 10
+        quota: 10000
         refresh-interval: 60
         type: ORIGIN
       vm-provider-movie:
-        limit: 10 
-        quota: 10000 
-        refresh-interval: 60 #s
+        limit: 10
+        quota: 10000
+        refresh-interval: 60
         type: ORIGIN
 feign:
   hystrix:
