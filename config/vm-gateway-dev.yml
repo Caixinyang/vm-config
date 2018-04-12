@@ -2,7 +2,17 @@
 logging:
   config: classpath:logback.xml
   path: d://logs//
-
+spring:
+  redis:
+    timeout: 10
+    database: 0
+    host: 120.78.191.94
+    port: 6379
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
 zuul:
   info:
     request: true
