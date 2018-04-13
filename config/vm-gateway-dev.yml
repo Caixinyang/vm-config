@@ -37,6 +37,37 @@ zuul:
       path: /admin/**
       serviceId: vm-provider-admin
       stripPrefix: false
+  ratelimit:
+    key-prefix: GATEWAY_RATELIMIT_KEY_PREFIX
+    enabled: true
+    repository: REDIS
+    behind-proxy: true
+    default-policy:
+      limit: 10
+      refresh-interval: 60
+      type:
+        - origin
+    policies:
+      vm-provider-user:
+        limit: 10
+        refresh-interval: 60
+        type:
+          - origin
+      vm-provider-movie:
+        limit: 10
+        refresh-interval: 60
+        type:
+          - origin
+      vm-provider-admin:
+        limit: 10
+        refresh-interval: 60
+        type:
+          - origin
+      vm-provider-src:
+        limit: 10
+        refresh-interval: 60
+        type:
+          - origin
 feign:
   hystrix:
     enabled: false
