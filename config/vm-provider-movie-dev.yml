@@ -1,6 +1,6 @@
 
 logging:
-  config: classpath:logback.xml
+  config: classpath:logback-dev.xml
   path: d://logs//
 # spring
 spring:
