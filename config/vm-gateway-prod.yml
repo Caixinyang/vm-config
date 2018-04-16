@@ -13,6 +13,31 @@ logging:
 zuul:
   info:
     request: true
+  ratelimit:
+    enabled: true #default false
+    behind-proxy: true #default false
+    repository: Redis
+    default-policy-list: #optional - will apply unless specific policy exists
+      limit: 100 #optional - request number limit per refresh interval window
+      refresh-interval: 120 #default value (in seconds)
+      type: origin
+    policies:
+      vm-provider-user:
+        limit: 100
+        refresh-interval: 120 #60 default value (in seconds)
+        type: origin
+      vm-provider-movie:
+        limit: 100
+        refresh-interval: 120 #60 default value (in seconds)
+        type: origin
+      vm-provider-admin:
+        limit: 100
+        refresh-interval: 120 #60 default value (in seconds)
+        type: origin
+      vm-provider-src:
+        limit: 100
+        refresh-interval: 120 #60 default value (in seconds)
+        type: origin
   host:
     connect-timeout-millis: 6000000
     socket-timeout-millis: 6000000
