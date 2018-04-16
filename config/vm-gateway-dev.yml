@@ -17,26 +17,26 @@ zuul:
     enabled: true #default false
     behind-proxy: true #default false
     repository: Redis
-    default-policy-list: #optional - will apply unless specific policy exists
-      limit: 100 #optional - request number limit per refresh interval window
-      refresh-interval: 120 #default value (in seconds)
+    default-policy: 
+      limit: 100 
+      refresh-interval: 120 
       type: origin
     policies:
       vm-provider-user:
         limit: 100
-        refresh-interval: 120 #60 default value (in seconds)
+        refresh-interval: 120 
         type: origin
       vm-provider-movie:
         limit: 100
-        refresh-interval: 120 #60 default value (in seconds)
+        refresh-interval: 120 
         type: origin
       vm-provider-admin:
         limit: 100
-        refresh-interval: 120 #60 default value (in seconds)
+        refresh-interval: 120 
         type: origin
       vm-provider-src:
         limit: 100
-        refresh-interval: 120 #60 default value (in seconds)
+        refresh-interval: 120 
         type: origin
   host:
     connect-timeout-millis: 6000000
