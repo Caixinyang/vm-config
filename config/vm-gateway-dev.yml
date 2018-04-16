@@ -14,30 +14,30 @@ zuul:
   info:
     request: true
   ratelimit:
-    enabled: true #default false
-    behind-proxy: true #default false
-    repository: Redis
+    enabled: true
+    behind-proxy: true
+    repository: REDIS
     default-policy: 
       limit: 100 
       refresh-interval: 120 
-      type: origin
+      type: ORIGIN
     policies:
       vm-provider-user:
         limit: 100
         refresh-interval: 120 
-        type: origin
+        type: ORIGIN
       vm-provider-movie:
         limit: 100
         refresh-interval: 120 
-        type: origin
+        type: ORIGIN
       vm-provider-admin:
         limit: 100
         refresh-interval: 120 
-        type: origin
+        type: ORIGIN
       vm-provider-src:
         limit: 100
         refresh-interval: 120 
-        type: origin
+        type: ORIGIN
   host:
     connect-timeout-millis: 6000000
     socket-timeout-millis: 6000000
