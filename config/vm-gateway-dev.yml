@@ -23,7 +23,7 @@ zuul:
       type: origin
     policies:
       vm-provider-user:
-        limit: 10
+        limit: 100
         refresh-interval: 120 #60 default value (in seconds)
         type: origin
       vm-provider-movie:
