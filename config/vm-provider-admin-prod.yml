@@ -22,6 +22,18 @@ spring:
     # max wait time
     maxWait: 6000000
     timeBetweenEvictionRunsMillis: 30000
+  rabbitmq:
+    host: 39.108.231.231
+    port: 5672
+    username: root
+    password: 123
+  cloud:
+    bus:
+      trace:
+        enabled: true
+management:
+  security:
+    enabled: false
 hystrix:
   command:
     default:

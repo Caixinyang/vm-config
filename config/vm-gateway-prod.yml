@@ -7,6 +7,18 @@ spring:
       max-request-size: 2000MB # 设置最大的请求文件的大小
       file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
       location: /usr/local/src/  # 上传的临时目录
+  rabbitmq:
+    host: 39.108.231.231
+    port: 5672
+    username: root
+    password: 123
+  cloud:
+    bus:
+      trace:
+        enabled: true
+management:
+  security:
+    enabled: false
 logging:
   config: classpath:logback-prod.xml
   path: /usr/local/src/logs/
