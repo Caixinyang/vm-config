@@ -54,4 +54,4 @@ feign:
 vm:
   admin:
     session:
-      lifetime: 600 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
+      lifetime: 2 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
