@@ -27,13 +27,6 @@ spring:
     port: 5672
     username: root
     password: 123
-  cloud:
-    bus:
-      trace:
-        enabled: true
-management:
-  security:
-    enabled: false
 hystrix:
   command:
     default:
