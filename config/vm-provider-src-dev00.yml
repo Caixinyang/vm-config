@@ -1,6 +1,6 @@
 logging:
   config: classpath:logback-dev.xml
-  path: d://logs//
+  path: /usr/local/src/logs/
 # spring
 spring:
   http:
