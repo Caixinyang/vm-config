@@ -1,0 +1,72 @@
+
+logging:
+  config: classpath:logback-local.xml
+  path: d://logs//
+# spring
+spring:
+  http:
+    multipart:
+      enabled: true   # 启用http上传处理
+      max-file-size: 2000MB # 设置单个文件的最大长度
+      max-request-size: 2000MB # 设置最大的请求文件的大小
+      file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
+      location: d:/  # 上传的临时目录
+  #db connection
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.231.231:3306/vm_movie?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&amp;autoReconnect=true
+    username: root
+    password: 123
+    # for initial,min,max
+    initialSize: 5
+    minIdle: 5
+    maxActive: 100
+    # sql for validating
+    validationQuery: SELECT 1
+    # this will validate idle connection.if validation failed, will remove from pool
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    # max wait time
+    maxWait: 6000000
+    timeBetweenEvictionRunsMillis: 30000
+  rabbitmq:
+    host: 39.108.231.231
+    port: 5672
+    username: root
+    password: 123
+  cloud:
+    bus:
+      trace:
+        enabled: true
+management:
+  security:
+    enabled: false
+
+
+ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+  ReadTimeout: 6000000
+  ConnectTimeout: 6000000
+  ServerListRefreshInterval: 5000 #eureka客户端ribbon刷新时间,默认30s
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 6000000
+feign:
+  hystrix:
+    enabled: false
+
+vm:
+  movie:
+    img:
+      versions: 50,80,300
+    poster:
+      versions: 50,80,200,600,1000
+  filmmaker:
+    img:
+      versions: 50,80,300
