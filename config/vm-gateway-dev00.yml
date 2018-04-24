@@ -31,33 +31,44 @@ zuul:
     socket-timeout-millis: 6000000
   routes:
     user:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /user/**
       serviceId: vm-provider-user
       stripPrefix: false
     src:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /src/**
       serviceId: vm-provider-src
       stripPrefix: false
     filmmaker:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /filmmaker/**
       serviceId: vm-provider-movie
       stripPrefix: false
     movie:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /movie/**
       serviceId: vm-provider-movie
       stripPrefix: false
     tagGroup:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /tagGroup/**
       serviceId: vm-provider-movie
       stripPrefix: false
     tag:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /tag/**
       serviceId: vm-provider-movie
       stripPrefix: false
     admin:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /admin/**
       serviceId: vm-provider-admin
       stripPrefix: false
+    adminWS:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
+      path: /adminWS/**
+      serviceId: vm-provider-admin
 feign:
   hystrix:
     enabled: false
