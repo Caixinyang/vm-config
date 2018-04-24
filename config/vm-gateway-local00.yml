@@ -31,34 +31,42 @@ zuul:
     socket-timeout-millis: 6000000
   routes:
     user:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /user/**
       serviceId: vm-provider-user
       stripPrefix: false
     src:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /src/**
       serviceId: vm-provider-src
       stripPrefix: false
     filmmaker:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /filmmaker/**
       serviceId: vm-provider-movie
       stripPrefix: false
     movie:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /movie/**
       serviceId: vm-provider-movie
       stripPrefix: false
     tagGroup:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /tagGroup/**
       serviceId: vm-provider-movie
       stripPrefix: false
     tag:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /tag/**
       serviceId: vm-provider-movie
       stripPrefix: false
     admin:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /admin/**
       serviceId: vm-provider-admin
       stripPrefix: false
     adminWS:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
       path: /adminWS/**
       serviceId: vm-provider-admin
 feign:
