@@ -58,6 +58,9 @@ zuul:
       path: /admin/**
       serviceId: vm-provider-admin
       stripPrefix: false
+    adminWS:
+      path: /adminWS/**
+      serviceId: vm-provider-admin
 feign:
   hystrix:
     enabled: false
