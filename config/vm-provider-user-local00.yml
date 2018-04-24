@@ -51,13 +51,6 @@ hystrix:
 feign:
   hystrix:
     enabled: false
-vm:
-  user:
-    session:
-      lifetime: 60 #秒
-    img:
-      versions: 50,80,300
-
 
 
 

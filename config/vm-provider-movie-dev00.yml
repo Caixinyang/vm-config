@@ -60,13 +60,3 @@ hystrix:
 feign:
   hystrix:
     enabled: false
-
-vm:
-  movie:
-    img:
-      versions: 50,80,300
-    poster:
-      versions: 50,80,200,600,1000
-  filmmaker:
-    img:
-      versions: 50,80,300

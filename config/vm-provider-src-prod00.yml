@@ -48,17 +48,3 @@ ribbon:
   ServerListRefreshInterval: 5000 #eureka客户端ribbon刷新时间,默认30s
 
 
-
-vm:
-  src:
-    img:
-      url: /src/img
-      default: default.png
-      maxSize: 2097152
-      allowSuffix: jpg,png
-      path: /usr/local/vm/src/img/
-    video:
-      url: /src/video
-      default: default.mp4
-      path: /usr/local/vm/src/video/
-

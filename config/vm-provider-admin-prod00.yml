@@ -51,7 +51,3 @@ feign:
   hystrix:
     enabled: true
 
-vm:
-  admin:
-    session:
-      lifetime: 180 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug

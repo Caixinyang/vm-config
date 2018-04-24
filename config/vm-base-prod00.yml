@@ -1,0 +1,28 @@
+vm:
+  admin:
+    session:
+      lifetime: 888 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
+  user:
+    session:
+      lifetime: 888 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
+    img:
+      versions: 50,80,300
+  movie:
+    img:
+      versions: 50,80,300
+    poster:
+      versions: 50,80,200,600,1000
+  filmmaker:
+    img:
+      versions: 50,80,300
+  src:
+    img:
+      url: /src/img
+      default: default.png
+      maxSize: 2097152
+      allowSuffix: jpg,png
+      path: /usr/local/vm/src/img/
+    video:
+      url: /src/video
+      default: default.mp4
+      path: /usr/local/vm/src/video/
