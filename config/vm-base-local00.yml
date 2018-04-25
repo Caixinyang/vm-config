@@ -1,7 +1,7 @@
 spring:
   redis:
     cluster:
-      nodes: 39.108.231.231:6666
+      nodes: 39.108.231.231:6666,47.106.119.0:6666
     password: ZK19951217.
 
 vm:
