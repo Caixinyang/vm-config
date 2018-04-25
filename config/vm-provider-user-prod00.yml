@@ -3,6 +3,10 @@ logging:
   path: /usr/local/src/logs/
 # spring
 spring:
+  redis:
+    host: 39.108.231.231
+    port: 6666
+    password: ZK19951217.
   #db connection
   datasource:
     driverClassName: com.mysql.jdbc.Driver
