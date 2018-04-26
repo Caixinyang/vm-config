@@ -72,6 +72,12 @@ feign:
   hystrix:
     enabled: true
 
+vm-provider-admin: 
+  ribbon:
+    NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
+vm-provider-user: 
+  ribbon:
+    NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
 
 ribbon:
   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
