@@ -1,6 +1,6 @@
 logging:
-  config: classpath:logback-prod.xml
-  path: /usr/local/src/logs/
+  config: classpath:logback-local.xml
+  path: d://logs//
 # spring
 spring:
   redis:
@@ -26,7 +26,18 @@ spring:
     # max wait time
     maxWait: 6000000
     timeBetweenEvictionRunsMillis: 30000
-
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 39.108.231.231
+    port: 5672
+    username: root
+    password: 123
+management:
+  security:
+    enabled: false
 hystrix:
   command:
     default:
@@ -42,5 +53,6 @@ ribbon:
   ServerListRefreshInterval: 5000 #eureka客户端ribbon刷新时间,默认30s
 feign:
   hystrix:
-    enabled: true
+    enabled: false
+
 
