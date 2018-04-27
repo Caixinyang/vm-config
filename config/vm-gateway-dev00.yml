@@ -69,18 +69,15 @@ zuul:
       sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /adminWS/**
       serviceId: vm-provider-admin-ws
-    userWS:
+    ws:
       sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
-      path: /userWS/**
-      serviceId: vm-provider-user-ws
+      path: /ws/**
+      serviceId: vm-provider-ws
 feign:
   hystrix:
-    enabled: false
+    enabled: true
 
-vm-provider-admin-ws: 
-  ribbon:
-    NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
-vm-provider-user-ws: 
+vm-provider-ws: 
   ribbon:
     NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
 ribbon:
