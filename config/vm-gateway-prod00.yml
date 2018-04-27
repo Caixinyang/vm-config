@@ -76,10 +76,10 @@ feign:
   hystrix:
     enabled: true
 
-vm-provider-admin: 
+vm-provider-admin-ws: 
   ribbon:
     NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
-vm-provider-user: 
+vm-provider-user-ws: 
   ribbon:
     NFLoadBalancerRuleClassName: com.vm.gateway.rules.IpHashRule
 
