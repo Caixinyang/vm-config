@@ -67,7 +67,7 @@ zuul:
     adminWS:
       sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /adminWS/**
-      serviceId: vm-provider-admin
+      serviceId: vm-provider-admin-ws
     userWS:
       sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /userWS/**
