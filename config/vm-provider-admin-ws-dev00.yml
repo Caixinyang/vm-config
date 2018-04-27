@@ -1,0 +1,46 @@
+logging:
+  config: classpath:logback-dev.xml
+  path: d://logs//
+# spring
+spring:
+  redis:
+    host: 39.108.231.231
+    port: 6666
+    password: ZK19951217.
+  #db connection
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.231.231:3306/vm_admin?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&amp;autoReconnect=true
+    username: root
+    password: 123
+    # for initial,min,max
+    initialSize: 5
+    minIdle: 5
+    maxActive: 100
+    # sql for validating
+    validationQuery: SELECT 1
+    # this will validate idle connection.if validation failed, will remove from pool
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    # max wait time
+    maxWait: 6000000
+    timeBetweenEvictionRunsMillis: 30000
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 39.108.231.231
+    port: 5672
+    username: root
+    password: 123
+management:
+  security:
+    enabled: false
+
+feign:
+  hystrix:
+    enabled: false
+
+
