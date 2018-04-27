@@ -36,10 +36,8 @@ spring:
       bindings:  
         userInput:  
           destination: user-dest
-          group: user-grp
         adminInput:  
           destination: admin-dest
-          group: admin-grp
   rabbitmq:
     host: 39.108.231.231
     port: 5672
