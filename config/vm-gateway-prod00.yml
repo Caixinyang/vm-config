@@ -68,6 +68,10 @@ zuul:
       sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
       path: /adminWS/**
       serviceId: vm-provider-admin
+    userWS:
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods,Access-Control-Allow-Credentials
+      path: /userWS/**
+      serviceId: vm-provider-admin-ws
 feign:
   hystrix:
     enabled: true
