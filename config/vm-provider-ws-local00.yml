@@ -32,6 +32,12 @@ spring:
     bus:
       trace:
         enabled: true
+    stream:
+      bindings:  
+        userOnlineStatusInput:  
+          destination: user-dest
+        adminOnlineStatusInput:  
+          destination: admin-dest
   rabbitmq:
     host: 39.108.231.231
     port: 5672
