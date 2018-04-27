@@ -34,10 +34,12 @@ spring:
         enabled: true
     stream:
       bindings:  
-        userOnlineStatusInput:  
+        userOutput:  
           destination: user-dest
-        adminOnlineStatusInput:  
+          group: user-grp
+        adminOutput:  
           destination: admin-dest
+          group: admin-grp
   rabbitmq:
     host: 39.108.231.231
     port: 5672
