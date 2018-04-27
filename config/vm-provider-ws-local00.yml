@@ -34,10 +34,10 @@ spring:
         enabled: true
     stream:
       bindings:  
-        userOutput:  
+        userInput:  
           destination: user-dest
           group: user-grp
-        adminOutput:  
+        adminInput:  
           destination: admin-dest
           group: admin-grp
   rabbitmq:
