@@ -29,6 +29,10 @@ spring:
     timeBetweenEvictionRunsMillis: 30000
 
   cloud:
+    stream:  
+      bindings:  
+        userOnlineStatusOutput:  
+          destination: user-dest
     bus:
       trace:
         enabled: true
