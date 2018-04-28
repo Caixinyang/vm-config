@@ -2,7 +2,7 @@
 vm:
   admin:
     session:
-      lifetime: 888 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
+      lifetime: 10 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
   user:
     session:
       lifetime: 888 #秒，不要与前端的轮询在线状态间隔时间相同，不然会出现bug
