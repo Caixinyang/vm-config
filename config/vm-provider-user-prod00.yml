@@ -31,7 +31,7 @@ spring:
   cloud:
     stream:  
       bindings:  
-        userOnlineStatusOutput:  
+        userOutput:  
           destination: user-dest
     bus:
       trace:

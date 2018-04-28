@@ -34,7 +34,7 @@ spring:
         enabled: true
     stream:  
       bindings:  
-        userOnlineStatusOutput:  
+        userOutput:  
           destination: user-dest
   rabbitmq:
     host: 39.108.231.231
