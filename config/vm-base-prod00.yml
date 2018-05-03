@@ -19,6 +19,7 @@ vm:
   src:
     img:
       url: /src/img
+      defaultUrl: /src/img/-1
       default: default.png
       maxSize: 2097152
       allowSuffix: jpg,png
