@@ -27,4 +27,4 @@ vm:
     video:
       url: /src/video
       default: default.mp4
-      path: D:\vm\src\video\
+      path: C:\vm\src\video\
