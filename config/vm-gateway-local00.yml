@@ -8,10 +8,10 @@ spring:
       file-size-threshold: 1MB  # 当上传文件达到1MB的时候进行磁盘写入
       location: d:/  # 上传的临时目录
   rabbitmq:
-    host: 39.108.231.231
+    host: 127.0.0.1
     port: 5672
-    username: root
-    password: 123
+    username: admin
+    password: admin
   cloud:
     bus:
       trace:
