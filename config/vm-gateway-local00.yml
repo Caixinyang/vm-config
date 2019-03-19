@@ -22,7 +22,7 @@ management:
 
 logging:
   config: classpath:logback-local.xml
-  path: d://logs//
+  path: c://logs//
 zuul:
   info:
     request: true
