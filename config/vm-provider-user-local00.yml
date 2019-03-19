@@ -1,19 +1,19 @@
 logging:
   config: classpath:logback-local.xml
-  path: d://logs//
+  path: c://logs//
 # spring
 spring:
 
   redis:
-    host: 39.108.231.231
-    port: 6666
-    password: ZK19951217.
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
   #db connection
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://39.108.231.231:3306/vm_user?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&amp;autoReconnect=true
+    url: jdbc:mysql://127.0.0.1:3306/vm_user?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&amp;autoReconnect=true
     username: root
-    password: 123
+    password: Huawei@123
     # for initial,min,max
     initialSize: 5
     minIdle: 5
@@ -38,10 +38,10 @@ spring:
         userOutput:  
           destination: user-dest
   rabbitmq:
-    host: 39.108.231.231
+    host: 127.0.0.1
     port: 5672
-    username: root
-    password: 123
+    username: admin
+    password: admin
 management:
   security:
     enabled: false
