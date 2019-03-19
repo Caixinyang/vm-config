@@ -23,7 +23,7 @@ vm:
       default: default.png
       maxSize: 2097152
       allowSuffix: jpg,png
-      path: D:\vm\src\img\
+      path: C:\vm\src\img\
     video:
       url: /src/video
       default: default.mp4
