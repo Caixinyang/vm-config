@@ -1,7 +1,7 @@
 
 logging:
   config: classpath:logback-local.xml
-  path: d://logs//
+  path: c://logs//
 # spring
 spring:
   http:
